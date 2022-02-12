@@ -1,6 +1,6 @@
 import random
 from time import sleep
-class Bj:
+class Blackjack:
     def __init__(self):
         self.number = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
         self.shape = ["♠","♦","♣","♥"]
@@ -141,7 +141,7 @@ while True:
         while True:
             print("|"+f"Round {x}".center(70,"-")+"|")
             x += 1
-            Bj()
+            Blackjack()
             sleep(1)
             
     elif val == "2":
