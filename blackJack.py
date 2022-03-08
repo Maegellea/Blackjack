@@ -1,5 +1,4 @@
 import random
-from time import sleep
 class Blackjack:
     def __init__(self):
         self.number = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
@@ -137,12 +136,11 @@ x = 1
 while True:
     val = input("1-Play\n2-How to play\n3-Rules\n4-Exit\n: ")
     if val == "1":
-        sleep(1)
         while True:
             print("|"+f"Round {x}".center(70,"-")+"|")
             x += 1
             Blackjack()
-            sleep(1)
+            
             
     elif val == "2":
         print("Blackjack is a game that the player draws a card until total value of player reaches 21. \nEvery card has a number value. For example value of three of clubs is three.\nIf the player's total value is greater than the computer's and if it is smaller than 21 or equal to 21, player will win.However, there is a value limit which is '21'.\nIf the player draws a card and if the total value of the player is greater than 21, player loses.\nThere is one exceptional card which named 'A' (ace).\nYou are able to change the value of this card. You can take the value as 1 or 11.\nIf the total value of your cards is greater than 21, then you can take the value of the ace as '1'\nOtherwise it is concidered '11'.\n")
